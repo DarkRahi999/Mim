@@ -39,7 +39,7 @@ input{
     margin-bottom: 5px;
     border: 0px;
     border-radius: 5px ;
-    box-shadow: #d6cfcf 2px 2px 6px;
+    box-shadow: #d6cfcf 2px  2px 6px;
     outline: 2px solid transparent ;
     /* border-color: none; */
     /* box-sizing: none; */
@@ -73,7 +73,7 @@ hr{
 }
 .m3{
     text-align: center;
-    margin-top: 50px;
+    margin-top: 50              px;
     margin-left: 130px;
     text-decoration: none;
 }
