@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.sea{
+    width: 1400px;
+    height: 700px;
+    background-image: url(images.jpeg);
+    padding: 100px 300px;
+    background-repeat: no-repeat;
+    background-size: 1400px 700px;
+    background-position: center;
+}
+.fish{
+    /* align-items: baseline; */
+    text-transform: capitalize;
+    color: #fff;
+}
+img{
+    width: 25px;
+}
+nav{
+    width: 800px;
+    border: 1px solid;
+    background-image: url(images.jpeg);
+    background-position: center;
+    padding: 15px 10px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: black 2px 2px 10px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+.look-up{
+    border: 2px solid #fff;
+    padding-left: 80px;
+}
+nav ul li a{
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #fff; 
+    font-size: 28px; 
+    padding: 15px 25px; 
+    transition: 0.3s ease-out;
+}
+nav ul li a:hover{
+    color: aquamarine;
+    background-image: linear-gradient(to right,black, blue);
+    box-shadow: gray 1px 1px 5px;
+    text-shadow: white 3px 3px 6px;
+}
+.nine{
+    text-transform: capitalize;
+    padding: 25px 45px;
+    
+}
+.beauty{
+    text-align: center;
+    padding: 10px 15px;
+    font-size: 50px;
+    color: rgb(2, 2, 65);
+    text-shadow: rgb(29, 28, 28) 4px 8px 10px;
+}
+.write{
+    text-align: center;
+    padding: 10px 15px;
+    font-size: 20px;
+    color: rgb(2, 2, 65);
+    margin-top: 15px;
+      text-shadow: rgb(19, 18, 18) 4px 8px 10px;
+}
+.button{
+    padding: 10px 30px;
+    border: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+button{
+    background-image: linear-gradient(to bottom,
+    rgb(31, 29, 29), blue);
+    color: #fff;
+    font-size: 20px;
+    padding: 10px ;
+    border: none;
+    transition: 0.3s ease-out;
+}
+button:hover{
+    background-image:linear-gradient(to top,
+    darkblue, darkred, darkgreen, yellow);
+    color: skyblue;
+    box-shadow: blue 4px 4px 10px;
+    text-shadow: gray 2px 2px 5px;
+}
