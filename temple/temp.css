@@ -3,9 +3,13 @@
     padding: 0;
     box-sizing: content-box;
 }
+
+body{
+    background-color: rgb(112, 226, 226);
+}
 .main-box{
     width: 100%;
-    background-color: rgb(199, 211, 221);
+    /* background-color: rgb(199, 211, 221); */
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
@@ -19,9 +23,13 @@
     border: 2px solid gray;
    background-color: #e0f1ef;
     border-radius: 20px;
+    transition: 0.3s;
 }
 .box:hover{
-    border: 2px solid rgb(248, 117, 117);
+    border: 2px solid rgb(92, 44, 224);
+    background-image: linear-gradient(to left, gray, yellow, red);
+    color: rgb(95, 7, 7);
+    box-shadow: gray 5px 6px 10px;
 }
 .image{
     display: flex;
@@ -37,4 +45,52 @@ img{
 }
 .image h1:hover{
     text-decoration: underline;
+}
+h3{
+    text-align: center;
+    font-size: 100px;
+    font-weight: bolder;
+    text-decoration: underline;
+    color: rgb(111, 7, 214);
+    padding-bottom: 20px;
+}
+.main2{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+.box2{
+    height: 150px;
+    width: 25%;
+    border: 1px solid grey;
+    border-radius: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    padding: 20px 30px;
+    text-transform: capitalize;
+    transition: 0.3s;
+}
+.box2:hover{
+  border: 2px solid rgb(92, 44, 224);
+    background-image: linear-gradient(to left, gray, yellow, red);
+    color: rgb(95, 7, 7);
+    box-shadow: gray 5px 6px 10px;
+}
+.img2{
+    width: 50px;
+    height: 50px;
+    background-color: aqua;
+    border-radius: 10px;
+  
+} 
+h2{
+    padding-left: 30px;
+    padding-top: 5px;
+}
+h2:hover{
+    text-decoration: underline;
+}
+h5{
+    line-height: 1.5;
 }
