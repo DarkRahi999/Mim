@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Colorful Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Tailwind CDN with Dark Mode Support -->
+  <script>
+    tailwind = {
+      config: {
+        darkMode: 'class',
+      }
+    }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-pink-50 via-purple-50 to-indigo-100 dark:from-gray-900 dark:via-gray-900 dark:to-gray-800 text-gray-800 dark:text-gray-200 transition-colors duration-500">
+
+  <!-- Navbar -->
+  <nav class="bg-gradient-to-r from-red-600 to-purple-600 dark:from-gray-800 dark:to-gray-900 shadow-lg sticky top-0 z-50 transition-colors">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-white">MyWebsite</h1>
+
+      <div class="space-x-6 hidden md:block text-white font-semibold">
+        <a href="#" class="hover:text-yellow-300">Home</a>
+        <a href="#" class="hover:text-yellow-300">About</a>
+        <a href="#" class="hover:text-yellow-300">Services</a>
+        <a href="#" class="hover:text-yellow-300">Contact</a>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <!-- Dark Mode Toggle Button -->
+        <button id="darkToggle" class="bg-white/20 text-white px-3 py-1 rounded-full text-sm hover:bg-white/30 transition">
+          🌙 Dark
+        </button>
+        <button class="md:hidden border border-white text-white px-3 py-1 rounded">Menu</button>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-600 dark:from-gray-800 dark:via-gray-700 dark:to-gray-900 text-white transition-colors">
+    <div class="max-w-7xl mx-auto px-4 py-28 text-center">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4 drop-shadow-lg">Build Your Colorful Website</h2>
+      <p class="text-lg mb-6 text-white/90">Fast, responsive and modern design using Tailwind CSS.</p>
+      <a href="#" class="bg-yellow-400 text-black px-6 py-3 rounded-full font-semibold hover:bg-yellow-300 transition">Get Started</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="max-w-7xl mx-auto px-4 py-20">
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+      <img src="download (1).jpeg" class="rounded-2xl shadow-2xl" alt="about">
+      <div>
+        <h3 class="text-3xl font-bold mb-4 text-indigo-600 dark:text-indigo-400">About Us</h3>
+        <p class="text-gray-700 dark:text-gray-300 mb-4">We create modern, colorful, and user-friendly websites that represent your brand perfectly.</p>
+        <a href="#" class="text-pink-600 dark:text-pink-400 font-semibold hover:underline">Learn More →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="bg-gradient-to-r from-indigo-50 to-pink-50 dark:from-gray-900 dark:to-gray-800 py-20 transition-colors">
+    <div class="max-w-7xl mx-auto px-4">
+      <h3 class="text-3xl font-bold text-center mb-12 text-purple-700 dark:text-purple-400">Our Services</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-gradient-to-br from-pink-500 to-red-500 dark:from-gray-700 dark:to-gray-800 p-6 rounded-2xl shadow-xl text-white">
+          <h4 class="text-xl font-semibold mb-2">Web Design</h4>
+          <p>Clean, modern & eye-catching designs.</p>
+        </div>
+        <div class="bg-gradient-to-br from-indigo-500 to-blue-500 dark:from-gray-700 dark:to-gray-800 p-6 rounded-2xl shadow-xl text-white">
+          <h4 class="text-xl font-semibold mb-2">Development</h4>
+          <p>Fast, secure & scalable solutions.</p>
+        </div>
+        <div class="bg-gradient-to-br from-purple-500 to-fuchsia-500 dark:from-gray-700 dark:to-gray-800 p-6 rounded-2xl shadow-xl text-white">
+          <h4 class="text-xl font-semibold mb-2">SEO</h4>
+          <p>Rank higher & grow organic traffic.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="max-w-7xl mx-auto px-4 py-20">
+    <h3 class="text-3xl font-bold text-center mb-10 text-indigo-700 dark:text-indigo-400">Contact Us</h3>
+    <form class="max-w-xl mx-auto bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-2xl space-y-4 transition-colors">
+      <input type="text" placeholder="Your Name" class="w-full border dark:border-gray-700 bg-transparent px-4 py-2 rounded focus:ring-2 focus:ring-pink-400 outline-none">
+      <input type="email" placeholder="Your Email" class="w-full border dark:border-gray-700 bg-transparent px-4 py-2 rounded focus:ring-2 focus:ring-indigo-400 outline-none">
+      <textarea placeholder="Your Message" class="w-full border dark:border-gray-700 bg-transparent px-4 py-2 rounded h-28 focus:ring-2 focus:ring-purple-400 outline-none"></textarea>
+      <button class="bg-gradient-to-r from-pink-500 to-indigo-600 text-white w-full py-2 rounded-full font-semibold hover:opacity-90">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gradient-to-r from-gray-900 to-gray-800 text-white text-center py-6">
+    <p>© 2025 MyWebsite. All rights reserved.</p>
+  </footer>
+
+  <!-- Dark Mode Script -->
+  <script>
+    const toggleBtn = document.getElementById('darkToggle');
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+    });
+  </script>
+
+</body>
+</html>
