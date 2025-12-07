@@ -18,7 +18,7 @@ nav {
 }
 nav ul {
   /* margin: 8px; */
-  display: flex;
+  display: flex; 
 }
 nav ul li {
   display: inline-block;
@@ -34,4 +34,5 @@ nav ul li a {
 nav ul li a:hover {
   background-image: linear-gradient(to left, aqua, #8b0000, #9932cc, #ffd700);
   color: azure;
+  box-shadow: 2px 2px 5px gray;
 }
