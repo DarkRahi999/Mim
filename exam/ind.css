@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to right,rgb(188, 222,238), gray,rgb(188, 222, 238));
+    font-family: 'Poppins', sans-serif;
+}
+.cat{
+    transition: 0.3s ease-out;
+
+}
+.cat:hover{
+    margin-top: -10px;
+    transform: scale(1.1);
+    box-shadow: blue 4px 4px 10px;
+}
+/* .cat img{
+    transition: 0.5s ease-in-out;
+    overflow: hidden;
+}
+.cat img:hover{
+    scale: 1.2;
+} */
