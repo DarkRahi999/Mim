@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    box-sizing: content-box;
+}
+
+/*==every mane  work like top right bottom left== and for one for every side == for tow for top , bottom and left , right==*/
+
+body{
+    max-width: 100%;
+    overflow: hidden;
+}
+/* about text */
+text{
+    color: blanchedalmond;
+    text-align: center; /* left , right , justify, auto, center, end.  The text-align property is used to set the horizontal alignment of a text.*/ 
+    text-decoration: underline; /* overline , line-through , none */
+    vertical-align: middle; /* top , bottom , text-top , text-bottom, middle, baseline. length/% , sub, super */
+     direction: rtl; /* ltr (left to right) , rtl (right to left) */
+     unicode-bidi: bidi-override; /* normal , embed  to make arabic text right to left */
+     text-decoration: line-through; /* to cross the text line through it overline, line-through, none, underline */
+     text-decoration-color: red; /* to set color of the line */
+        text-decoration-style: wavy; /* to set style of the line solid, double, dotted, dashed, wavy */
+          text-decoration-thickness: auto; /* to set thickness of the line from auto , from 0 to 100% */
+          text-transform: capitalize; /* capitalize , uppercase , lowercase , none */
+          text-indent: 20px; /* to set indent of the text */
+          letter-spacing: 2px; /* to set space between letters */
+            word-spacing: 4px; /* to set space between words */
+            line-height: 1.0; /* to set space between lines */
+            white-space: nowrap; /* normal , pre , nowrap , pre-wrap , pre-line */
+            word-break: normal; /* normal , break-all , keep-all */
+            text-overflow: clip; /* clip , ellipsis */
+}
+/* --- about font----  */
+font{
+    font-size: larger; /* to set font size  larger , smaller , xx-small , x-small , small , medium , large , x-large , xx-large 
+     /* 1em * 16 = 16px */
+     /* 1.875em * 16 = 30px */
+    font-family: 'Times New Roman', Times, serif; /* to set font family */
+    font-weight: bold; /* normal , bold , bolder , lighter , 100 to 900 */
+    font-style: italic; /* normal , italic , oblique, initial, inherit, unset */
+    font-variant: small-caps; /* normal , small-caps, all-small-caps, petite-caps, all-petite-caps, unicase, titling-caps */
+    font-stretch: expanded; /* normal , ultra-condensed , extra-condensed , condensed , semi-condensed , semi-expanded , expanded , extra-expanded , ultra-expanded */
+    
+}
+/* ===border=== */
+border{
+    border: 1px solid blue; /* to style border color and width 
+                                dashed
+                                dotted
+                                double
+                                groove
+                                inset 
+                                ridge */
+    border-radius: 10px; /* to make border rounded */
+}        
+/* ++++background++++ */
+background{
+    background-color:rgb(255, 0, 0) ;
+    background-color: rgb(0, 0, 255);
+    background-color: rgb(0, 99, 0);
+    background-color: rgb(0, 33, 0);
+}
+background{
+    background-image: linear-gradient(to right, red, blue, yellow, green);
+    background-image: url(image address);
+    background-repeat:no-repeat;
+    background-repeat:repeat;
+    background-repeat:repeat-x; /* horizontal */
+    background-repeat:repeat-y; /* vertical */
+    background-size: cover;
+    background-attachment: fixed;
+    background-attachment: scroll; /* scroll with page */
+    background-position: center; /* center the image 
+                                   right the image
+                                   left the image
+                                   top the image
+                                   bottom the image*/
+      background: #ffffff url("img_tree.png") no-repeat right top; /* to get every background properties  in one line */                               
+}
+
+margin{ /*outer space of element */
+    /*length - specifies a margin in px, pt, cm, etc.
+      % - specifies a margin in % of the width of the containing element
+      inherit - specifies that the margin should be inherited from the parent element*/
+    margin: 10px; /* for all sides */
+    margin: 10px 20px 30px 40px; /* top 10px , right 20px , bottom 30px , left 40px */
+                                 /* margin: auto;  to center element horizontally */
+                                 /* margin: 0 auto;  to center element horizontally and vertically */
+                                 /*margin  collapse  only happens with top and bottom margins! Not left and right margins!*/
+
+}
+
+padding{ /* inner space of element */
+    padding: 10px; /* for all sides */
+    padding: 10px 20px 30px 40px; /* top 10px , right 20px , bottom 30px , left 40px */
+}
+
+outline{
+     outline: 3px solid red;
+  outline-offset: 25px; /* to set space between outline and element */
+}
+
+shadow{
+      text-shadow: 2px 2px 5px red; /* horizontal shadow , vertical shadow , blur radius , color */
+        box-shadow: 5px 5px 10px gray; /* horizontal shadow , vertical shadow , blur radius , color */
+
+}
+cursor{
+    cursor: pointer; /* to set cursor style  default , pointer , crosshair , move , text , wait , help , not-allowed */
+     
+}
+
+list-style{
+    list-style-type: square; /* to set list item marker  disc , circle , square , decimal , lower-roman , upper-roman , lower-alpha , upper-alpha , none */
+    list-style-image: url("image address"); /* to set list item marker as image */
+    list-style-position: inside; /* to set position of list item marker  inside , outside */
+     list-style: square inside url("sqpurple.gif"); /* to get every list style properties in one line */
+}
+
+table {
+  border-collapse: collapse; /* to merge table borders  collapse , separate */
+  border-spacing: 10px; /* to set space between table cells */
+  overflow-x: auto; /* to add horizontal scrollbar if table is too wide */
+  overflow-y: auto; /* to add vertical scrollbar if table is too tall */
+}
+
+disply{
+    display: block; /* inline , inline-block , flex , grid , none */
+    visibility: hidden; /* visible , hidden , collapse */
+    
+}
+
+/* visited link :visited */
+/* mouse over link :hover */
+/* selected link :active*/

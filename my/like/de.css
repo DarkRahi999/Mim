@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  text-transform: capitalize;
+}
+
+/* nav */
+nav {
+  width: 100%;
+  border: 2px solid;
+  display: flex;
+  background-image: linear-gradient(to right, red, blue, yellow, green);
+  justify-content: space-between;
+  padding: 10px 25px;
+  align-items: center;
+  border: none;
+}
+.new {
+  color: aqua;
+  display: flex;
+}
+/* nav ul {
+  margin: 8px; 
+  display: flex; 
+ }  */
+nav ul li {
+  display: inline-block;
+  margin-right: 50px;
+}
+nav ul li a {
+  text-decoration: none;
+  text-transform: capitalize;
+  padding: 5px 13px;
+  font-size: 25px;
+  color: black;
+  transition: 0.3s ease-out;
+}
+
+nav ul li a:hover, .m4:hover .dropbtn{
+  background-image: linear-gradient(to left, aqua, #8b0000, #9932cc, #ffd700);
+  color: azure;
+  box-shadow: 2px 2px 5px gray;
+}
+
+li.m4{
+  display: inline-block;
+}
+.m4-content{
+   background-image: linear-gradient(to left, aqua, #8b0000, #9932cc, #ffd700);
+  min-width: 50px;
+  box-shadow: 0 8px 15px 0 gray;
+  text-align: left;
+  position: absolute;
+  z-index: 1;
+  display: none;
+}
+.m4-content a{ 
+  color: aqua;
+  text-decoration: none;
+  display: block;
+  transform: 0.3s;
+}
+
+.m4-content a:hover{
+  background-image: linear-gradient(to top, green, yellow, orange, red);
+  color: #090000;
+  box-shadow: 0 8px 15px 0  rgb(221, 220, 220);
+}
+
+.m4:hover .m4-content{
+  display: block;
+}
+
+form input{
+  height: 30px;
+}
+
+input:hover{
+  border: 2px solid blue;
+}
+
+/* 
+nav ul li a.active{
+   background-image: linear-gradient(to left, aqua, #8b0000, #9932cc, #ffd700);
+   color: azure;
+  box-shadow: 2px 2px 5px gray;
+} */
+
+/* nav end */
+/* table */
+table{
+          margin: auto;
+          width: 60%;
+          text-align: center;
+          border-collapse: collapse;
+         /* border: 1px solid black; */
+         background-color: gray;
+         color: #fff;
+}
+.tableh1{
+  text-align: center;
+  margin: 10px;
+}
+th{
+  background-image: linear-gradient(to left, yellow, green,  red, orange, blue, indigo, violet);
+  color:#ddd;
+  height: 50px;
+  font-size: 25px;
+}
+th, td{
+  border-bottom: 2px solid #ddd;
+  /* border-right: 2px solid #ddd; */
+}
+td:hover{
+  background-color: #2fd6e2;
+  color: yellow;
+}
+  
+.new img{
+  width: 60px;
+  height: 60px;
+}
+.icon img{
+  margin-top: 5px;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+/* table end */
+
+/* faq page end */
+ 
+/* about page */
+.am{
+  margin: 40px;
+  background-color: #090000;
+}
+/* opacity work */
+.am img{
+  width: 250px;
+  height: 300px;
+  opacity: 0.5;
+}
+.am img:hover{
+  opacity: 1.0;
+}
+.be{
+  margin: 30px;
+  background-color: #542020;
+}
+.be h1{
+  color: #fff;
+  text-decoration: underline;
+}
+.icoh{
+  display: flex;
+  justify-content: center;
+     
+}
+.is img{
+  width: 350px;
+  height: 350px;
+  margin: 35px;
+}
+.im1{
+  opacity: 0.3;
+}
+.im1:hover{
+  opacity: 1.0;
+}
+.im2{
+  opacity: 0.6;
+}
+.im2:hover{
+  opacity: 1.0;
+}
+.im3{
+  opacity: 1.0;
+}
+.im3:hover{
+  opacity: 0.2;
+}
+
+.color{
+  background-color: #5B0F09;
+  margin-right: 20px;
+  margin-left: 20px;
+  height: 30px;
+  text-align: center;
+  color: #ffd700;
+}
+
+
+#op1{
+  opacity: 10%;
+}
+#op1:hover{
+  opacity: 100%;
+}
+#op2{
+  opacity: 30%;
+}
+#op2:hover{
+  opacity: 100%;
+}
+#op3{
+  opacity: 60%;
+}
+#op3:hover{
+  opacity: 100%;
+}
+#op4{
+  opacity: 80%;
+}
+#op4:hover{
+  opacity: 100%;
+}
+#op5{
+  opacity: 100%;
+}
+#op5:hover{
+  opacity: 10%;
+}
+
+
+.background{
+  margin-top: 30px;
+  border: 2px solid aqua;
+  height: 150px;
+  background: url(image/download4.jfif) repeat;
+}
+.tranforbox{
+  margin: 70px;
+  border: 1px solid black;
+  height: 30px;
+  background-color: #ffffff86;
+  text-align: center;
+}
+.tranforbox p{
+  font-weight: bold;
+  margin: 5px;
+}
+.tranforbox:hover{
+   background-color: #ffffff00;
+   border: none   ;
+}
+/* opacity work end */
+
+
+
+
+
+
+
+/* about page end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+.foot{
+  background-image: linear-gradient(to right, red, blue,yellow, green);
+  color: aqua;
+  margin-top: 30px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+/* footer end */
